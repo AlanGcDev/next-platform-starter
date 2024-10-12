@@ -1,10 +1,9 @@
 import '../styles/globals.css';
+import { Footer } from 'complement/footer';
+import { Nav } from 'complement/nav';
 
 export const metadata = {
-    title: {
-        template: '%s | Netlify',
-        default: 'Netlify Starter'
-    }
+    title: "InfoMundo"
 };
 
 export default function RootLayout({ children }) {
@@ -15,9 +14,11 @@ export default function RootLayout({ children }) {
             </head>
             <body className="antialiased text-white bg-blue-900">
                 <div className="flex flex-col min-h-screen px-6 bg-grid-pattern sm:px-12">
+                    <Nav></Nav>
                     <div className="flex flex-col w-full max-w-5xl mx-auto grow">
                         <div className="grow">{children}</div>
                     </div>
+                    <Footer></Footer>
                 </div>
             </body>
         </html>

@@ -1,0 +1,35 @@
+:root {
+    --bg: #11141e;
+    --bg2: #1a1f2f;
+    --bg3: #272e46;
+    --title: #f3f6f4;
+    --title2: #a2b7be;
+    --text: #717e86;
+    --btn: #79f0ff;
+    --btn-hover: #79f0ff99;
+    --btn-2: #ff914d;
+    --btn-2-hover: #ff914d99;
+    --transition: ease-in 0.3s;
+    --Monse: "Monse", sans-serif; 
+    --Roboto: "Roboto", sans-serif; 
+    --text: "text", sans-serif; 
+}
+
+@font-face {
+    font-family: "Monse";
+    src: url(/public/fonts/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "Roboto";
+    src: url(/public/fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: "text";
+    src: url(/public/fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: var(--Roboto);
+}
