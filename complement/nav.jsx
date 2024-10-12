@@ -1,30 +1,33 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { Icon } from '@iconify/react';
 
 const navItems = [
-    { linkText: 'Home', href: '/' },
-    { linkText: 'noticias', href: '/noticias' },
-    { linkText: 'Image CDN', href: '/image-cdn' },
-    { linkText: 'Edge Function', href: '/edge' },
-    { linkText: 'Blobs', href: '/blobs' },
-    { linkText: 'Classics', href: '/classics' }
+    { linkText: 'Home', href: '/', icon: 'mdi:home' },
+    { linkText: 'Juegos', href: '/juegos', icon: 'mdi:gamepad-variant' },
+    { linkText: 'Noticias', href: '/noticias', icon: 'mdi:newspaper-variant-outline' },
+    { linkText: 'Deportes', href: '/deportes', icon: 'mdi:soccer' },
+    { linkText: 'Contacto', href: '/contacto', icon: 'mdi:email' },
 ];
+
 
 export function Nav() {
     return (
-        <nav className="flex flex-wrap items-center gap-4 pt-6 pb-12 sm:pt-12 md:pb-24">
+        <nav className="">
             <Link href="/">
-                <Image src="" alt="Netlify logo" />
+                <img src="/image/infomundo.webp" alt="InfoMundo" />
             </Link>
+
             {!!navItems?.length && (
-                <ul className="flex flex-wrap gap-x-4 gap-y-1">
+                <ul>
                     {navItems.map((item, index) => (
-                        <li key={index}>
+                        <li key={index} className="flex items-center">
                             <Link
                                 href={item.href}
-                                className="inline-block px-1.5 py-1 transition hover:opacity-80 sm:px-3 sm:py-2"
+                                
                             >
-                                {item.linkText}
+                                <Icon icon={item.icon} className="icon" />
+                                <span>{item.linkText}</span>
                             </Link>
                         </li>
                     ))}
