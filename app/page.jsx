@@ -5,7 +5,6 @@ export default function Page() {
     return (
         
         <div className="container">
-            <Ads></Ads>
             <div className="content">
                 <div className="art-container">
                     <Link href="" className="art-product">
