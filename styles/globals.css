@@ -4,7 +4,7 @@
     --bg3: #272e46;
     --title: #f3f6f4;
     --title2: #a5a4a4;
-    --text-c: #717e86;
+    --text-c: #c2c2c2;
     --btn: #79f0ff;
     --btn-hover: #79f0ff99;
     --btn-2: #ff914d;
@@ -387,5 +387,78 @@ body {
         color: var(--text);
         transform: scale(1.05);
     }
+
+    .article {
+        width: 95%;
+        margin: 2.5%;
+
+    }
+
+    .article h2 {
+        color: var(--title);
+        font-size: 2.5rem;
+        font-family: var(--Monse);
+        margin-bottom: 1rem;
+    }
+
+    .article p {
+        color: var(--text-c);
+        font-size: 1.25rem;
+        font-family: var(--text);
+        margin-bottom: 1rem;
+    }
+
+    .article ul,.article ol {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 1rem;
+    }
+
+    .article ul li,.article ol li {
+        list-style: circle;
+        color: var(--text-c);
+        font-size: 1.25rem;
+        font-family: var(--text);
+    }
+
+    .content-article {
+        width: 95%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        background-color: var(--bg3);
+        border-radius: 1rem!important;
+        margin: 2.5%;
+    }
+
+    .content-article-img {
+        width: 25%;
+        height: auto;
+    }
+
+    .content-article-text {
+        width: 75%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-article-text h2 {
+        color: var(--title);
+        font-size: 2rem;
+        font-family: var(--Monse);
+        margin-bottom: 1rem;
+    }
+
+    .content-article-text p {
+        color: var(--text-c);
+        font-size: 0.75rem;
+        font-family: var(--text);
+        margin-bottom: 1rem;
+    }
+
 
 }
