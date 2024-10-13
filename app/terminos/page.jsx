@@ -1,5 +1,4 @@
 import { Icon } from '@iconify/react';
-import { Ads } from 'components/ads';
 import Link from 'next/link';
 
 export default function Page() {
