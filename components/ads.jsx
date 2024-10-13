@@ -1,103 +1,126 @@
+import Script from 'next/script';
 
 export function Ads() {
-    return (
-        <div className="ads-container">
-            <div className="ads-1"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9071856855843903"
-     crossorigin="anonymous"></script>
+  return (
+    <div className="ads-container">
+      {/* Script global para inicializar Google AdSense */}
+      <Script
+        id="adsense-init"
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9071856855843903"
+        crossOrigin="anonymous"
+        onLoad={() => {
+          (window.adsbygoogle = window.adsbygoogle || []).push({});
+        }}
+      />
 
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-9071856855843903"
-     data-ad-slot="5421231187"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script></div>
-            <div className="ads-3"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9071856855843903"
-     crossorigin="anonymous"></script>
+      {/* Bloque 1 */}
+      <div className="ads-1">
+        <ins
+          className="adsbygoogle"
+          style={{ display: 'block' }}
+          data-ad-client="ca-pub-9071856855843903"
+          data-ad-slot="5421231187"
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        ></ins>
+      </div>
 
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-9071856855843903"
-     data-ad-slot="5421231187"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script></div>
-            <div className="ads-4"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9071856855843903"
-     crossorigin="anonymous"></script>
+      {/* Bloque 2 */}
+      <div className="ads-2">
+        <ins
+          className="adsbygoogle"
+          style={{ display: 'block' }}
+          data-ad-client="ca-pub-9071856855843903"
+          data-ad-slot="5421231187"
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        ></ins>
+      </div>
 
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-9071856855843903"
-     data-ad-slot="5421231187"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script></div>
-            <div className="ads-5"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9071856855843903"
-     crossorigin="anonymous"></script>
+      {/* Bloque 3 */}
+      <div className="ads-3">
+        <ins
+          className="adsbygoogle"
+          style={{ display: 'block' }}
+          data-ad-client="ca-pub-9071856855843903"
+          data-ad-slot="5421231187"
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        ></ins>
+      </div>
 
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-9071856855843903"
-     data-ad-slot="5421231187"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script></div>
-            <div className="ads-6"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9071856855843903"
-     crossorigin="anonymous"></script>
+      {/* Bloque 4 */}
+      <div className="ads-4">
+        <ins
+          className="adsbygoogle"
+          style={{ display: 'block' }}
+          data-ad-client="ca-pub-9071856855843903"
+          data-ad-slot="5421231187"
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        ></ins>
+      </div>
 
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-9071856855843903"
-     data-ad-slot="5421231187"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script></div>
-            <div className="ads-7"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9071856855843903"
-     crossorigin="anonymous"></script>
+      {/* Bloque 5 */}
+      <div className="ads-5">
+        <ins
+          className="adsbygoogle"
+          style={{ display: 'block' }}
+          data-ad-client="ca-pub-9071856855843903"
+          data-ad-slot="5421231187"
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        ></ins>
+      </div>
 
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-9071856855843903"
-     data-ad-slot="5421231187"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script></div>
-            <div className="ads-8"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9071856855843903"
-     crossorigin="anonymous"></script>
+      {/* Bloque 6 */}
+      <div className="ads-6">
+        <ins
+          className="adsbygoogle"
+          style={{ display: 'block' }}
+          data-ad-client="ca-pub-9071856855843903"
+          data-ad-slot="5421231187"
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        ></ins>
+      </div>
 
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-9071856855843903"
-     data-ad-slot="5421231187"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script></div>
-            <div className="ads-9"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9071856855843903"
-     crossorigin="anonymous"></script>
+      {/* Bloque 7 */}
+      <div className="ads-7">
+        <ins
+          className="adsbygoogle"
+          style={{ display: 'block' }}
+          data-ad-client="ca-pub-9071856855843903"
+          data-ad-slot="5421231187"
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        ></ins>
+      </div>
 
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-9071856855843903"
-     data-ad-slot="5421231187"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script></div>
-        </div>
-    );
-};
+      {/* Bloque 8 */}
+      <div className="ads-8">
+        <ins
+          className="adsbygoogle"
+          style={{ display: 'block' }}
+          data-ad-client="ca-pub-9071856855843903"
+          data-ad-slot="5421231187"
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        ></ins>
+      </div>
+
+      {/* Bloque 9 */}
+      <div className="ads-9">
+        <ins
+          className="adsbygoogle"
+          style={{ display: 'block' }}
+          data-ad-client="ca-pub-9071856855843903"
+          data-ad-slot="5421231187"
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        ></ins>
+      </div>
+    </div>
+  );
+}
