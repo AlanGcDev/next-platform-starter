@@ -159,7 +159,7 @@ body {
 
     .content {
         background-color: var(--bg2);
-        width: 50%;
+        width: 80%;
         height: auto !important;
         border-radius: 1rem;
     }
@@ -424,6 +424,7 @@ body {
 
     .content-article {
         width: 95%;
+        text-decoration: none;
         height: auto;
         display: flex;
         align-items: center;
