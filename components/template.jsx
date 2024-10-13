@@ -1,9 +1,5 @@
-import { Icon } from '@iconify/react';
-import { Ads } from 'components/ads';
-import Link from 'next/link';
-export default function Page() {
-    return (
-        
+
+       
         <div className="container">
             <Ads></Ads>
             <div className="content">
@@ -21,6 +17,4 @@ export default function Page() {
             </div>
             <Ads></Ads>
         </div>
-        
-    );
-}
+   

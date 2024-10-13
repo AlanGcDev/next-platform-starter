@@ -1,6 +1,6 @@
 import '../styles/globals.css';
-import { Footer } from 'complement/footer';
-import { Nav } from 'complement/nav';
+import { Footer } from 'components/footer';
+import { Nav } from 'components/nav';
 
 export const metadata = {
     title: "InfoMundo"

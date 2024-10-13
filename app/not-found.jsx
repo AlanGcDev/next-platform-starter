@@ -1,13 +1,18 @@
 import Link from 'next/link';
+import { Icon } from '@iconify/react';
 
 
 export default function Custom404() {
     return (
-      <div style={{ textAlign: 'center', marginTop: '50px' }}>
-        <h1>404 - Página no encontrada</h1>
-        <p>Parece que la página que buscas no existe. 😢</p>
-        <Link href="/" >Inico</Link>
-      </div>
+        <div className='container-terms' >
+          <div className="content-404">
+            <h1 >404</h1>
+            <p >Parece que la página que buscas no existe. <Icon icon="fluent-emoji:sad-but-relieved-face" /></p>
+            <Link href="/">
+                Regresar al Inicio
+            </Link>
+          </div>
+            
+        </div>
     );
-  }
-  
+}

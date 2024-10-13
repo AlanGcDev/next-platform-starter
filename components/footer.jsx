@@ -7,7 +7,7 @@ export function Footer() {
                 <Link href=""> 
                     <img src="/image/infomundo.webp" alt="" />
                 </Link>
-                <p>�� 2022 InfoMundo. Todos los derechos reservados.</p>
+                <p>©️ 2022 InfoMundo. Todos los derechos reservados.</p>
             </div>
             <div className="info-footer">
                 <div className="redes">
